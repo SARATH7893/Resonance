@@ -15,7 +15,7 @@ app.use(userRoutes)
 
 
 const start=async()=>{
-    const connectDb=await mongoose.connect()
+    const connectDb=await mongoose.connect("")
 
     app.listen(9090,()=>{
         console.log("server is listening");
